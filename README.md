@@ -1,78 +1,73 @@
-[![Open in Visual Studio Code](https://classroom.github.com/assets/open-in-vscode-2e0aaae1b6195c2367325f4f02e2d04e9abb55f0b24a779b69b11b9e10269abc.svg)](https://classroom.github.com/online_ide?assignment_repo_id=19948611&assignment_repo_type=AssignmentRepo)
-# Real-Time Chat Application with Socket.io
+# Socket.io Chat App
 
-This assignment focuses on building a real-time chat application using Socket.io, implementing bidirectional communication between clients and server.
+## Project Overview
 
-## Assignment Overview
+This is a full-stack real-time chat application built with Next.js, React, and Socket.io. The project demonstrates modern web development practices, including server-side rendering, component-based architecture, and live communication between clients. The app is styled using Tailwind CSS and leverages a modular structure for scalability and maintainability.
 
-You will build a chat application with the following features:
-1. Real-time messaging using Socket.io
-2. User authentication and presence
-3. Multiple chat rooms or private messaging
-4. Real-time notifications
-5. Advanced features like typing indicators and read receipts
+## Setup Instructions
 
-## Project Structure
+### Prerequisites
 
-```
-socketio-chat/
-├── client/                 # React front-end
-│   ├── public/             # Static files
-│   ├── src/                # React source code
-│   │   ├── components/     # UI components
-│   │   ├── context/        # React context providers
-│   │   ├── hooks/          # Custom React hooks
-│   │   ├── pages/          # Page components
-│   │   ├── socket/         # Socket.io client setup
-│   │   └── App.jsx         # Main application component
-│   └── package.json        # Client dependencies
-├── server/                 # Node.js back-end
-│   ├── config/             # Configuration files
-│   ├── controllers/        # Socket event handlers
-│   ├── models/             # Data models
-│   ├── socket/             # Socket.io server setup
-│   ├── utils/              # Utility functions
-│   ├── server.js           # Main server file
-│   └── package.json        # Server dependencies
-└── README.md               # Project documentation
-```
+- Node.js (v18+ recommended)
+- pnpm (or npm/yarn)
+- Git
 
-## Getting Started
+### Installation
 
-1. Accept the GitHub Classroom assignment invitation
-2. Clone your personal repository that was created by GitHub Classroom
-3. Follow the setup instructions in the `Week5-Assignment.md` file
-4. Complete the tasks outlined in the assignment
+1. **Clone the repository:**
+   ```sh
+   git clone <repository-url>
+   cd socketios-chat-app
 
-## Files Included
+   pnpm install
 
-- `Week5-Assignment.md`: Detailed assignment instructions
-- Starter code for both client and server:
-  - Basic project structure
-  - Socket.io configuration templates
-  - Sample components for the chat interface
+pnpm dev   
 
-## Requirements
+cd client
+pnpm install
+pnpm dev
 
-- Node.js (v18 or higher)
-- npm or yarn
-- Modern web browser
-- Basic understanding of React and Express
+pnpm build
+pnpm start
 
-## Submission
+Features Implemented
+Real-time Messaging:
+Users can send and receive messages instantly using Socket.io.
 
-Your work will be automatically submitted when you push to your GitHub Classroom repository. Make sure to:
+User Authentication:
+Secure login and registration (if implemented).
 
-1. Complete both the client and server portions of the application
-2. Implement the core chat functionality
-3. Add at least 3 advanced features
-4. Document your setup process and features in the README.md
-5. Include screenshots or GIFs of your working application
-6. Optional: Deploy your application and add the URLs to your README.md
+Responsive UI:
+Built with Tailwind CSS for mobile and desktop compatibility.
 
-## Resources
+Component-based Architecture:
+Reusable components located in the components directory.
 
-- [Socket.io Documentation](https://socket.io/docs/v4/)
-- [React Documentation](https://react.dev/)
-- [Express.js Documentation](https://expressjs.com/)
-- [Building a Chat Application with Socket.io](https://socket.io/get-started/chat) 
+Hooks and Utilities:
+Custom React hooks in hooks and utility functions in lib.
+
+Next.js Server-Side Rendering:
+Fast initial load and SEO benefits.
+
+Vite-powered Client:
+The client folder contains a Vite + React setup for rapid development and HMR.
+
+Customizable Theme:
+Easily change base colors and styles via Tailwind configuration.
+
+Icon Support:
+Uses the Lucide icon library for consistent UI icons.
+
+Folder Structure
+app – Next.js app directory (pages, layouts, global styles)
+components – Shared React components
+hooks – Custom React hooks
+lib – Utility functions and modules
+public – Static assets
+server – Backend/server-side logic
+styles – Additional CSS/SCSS files
+client – Vite + React client (optional, for separate SPA)
+License
+
+by Solomon Matogo
+
